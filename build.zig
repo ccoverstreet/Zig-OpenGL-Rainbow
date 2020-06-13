@@ -14,6 +14,4 @@ pub fn build(b: *Builder) void {
     const run = exe.run();
     run.step.dependOn(b.getInstallStep());
     run_option.dependOn(&run.step);
-
-    
 }
